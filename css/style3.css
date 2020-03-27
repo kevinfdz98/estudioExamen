@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;  
+  }
+  
+  .logo > img {
+    width: 50px;
+  }
+  
+  div{
+    padding: 10px;
+  }
+  
+  header{
+    display: flex;
+  }
+  
+  .menu {
+    visibility: hidden;
+    max-height: 0;
+    padding: 0;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: gray;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+  
+  li{
+    padding: 0.5em;
+  }
+  
+  main{
+    display: flex;
+  }
+  
+  .product {
+    border: 1px #ccc solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 90%;
+  }
+  
+  footer {
+    margin-top: 10px;
+    border-top: 1px #ccc solid;
+  }
+  
+  .social {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-around;
+  }
+  
+  
+  
+  
+  
+  
+  /*pantallas grandes*/
+  @media (min-width:960px){
+  
+    .menu {
+      visibility: visible;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      color: white;
+      background-color: gray;
+      justify-content: flex-end;
+      margin-top: 0;
+      max-height: initial;
+    }
+  
+    .hamburger {
+      visibility: hidden;
+      max-height: 0;
+      padding: 0;
+    }
+  
+    main{
+      justify-content: space-evenly;
+    }
+  
+    .product{
+      width: 30%;
+    }
+  }
+  
+  
+  
+  
+  
+  /*Tablets*/
+  @media (min-width:640px) and (max-width:959px){
+  
+    main{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
+  
+  
+  
+  /*Celulares*/
+  @media (min-width:320px) and (max-width:639px){
+  
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    main{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social{
+      justify-content: space-evenly;
+    }
+  }
+  
+  
+  
+  
+  
+  /*break point minimo*/
+  @media (max-width:319px){
+    body{
+      width: 319px;
+    }
+  
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    main{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social{
+      justify-content: space-evenly;
+    }
+  }

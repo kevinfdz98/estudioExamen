@@ -1,0 +1,16 @@
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px; 
+    color : black; 
+}
+
+section{
+    border-style: double; 
+    border : 2px solid blue; 
+}
+
+h2 {
+    background-color: blueviolet;
+    color : wheat; 
+    padding : 10px ;
+}
